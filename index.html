@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="header">
+            <p>myList</p>
+        </header>
+
+        <section class="screen" id="screen">
+
+        <!--Primera pantalla-->
+            <div class="welcome" id="welcome">
+                <div class="main">
+                    <h1>No tenés nada en tu carrito</h1>
+                    <p>:(</p>
+                </div>
+                <div class="add" id="add">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 368C269.3 368 280 357.3 280 344V280H344C357.3 280 368 269.3 368 256C368 242.7 357.3 232 344 232H280V168C280 154.7 269.3 144 256 144C242.7 144 232 154.7 232 168V232H168C154.7 232 144 242.7 144 256C144 269.3 154.7 280 168 280H232V344C232 357.3 242.7 368 256 368z"/></svg>
+                </div>
+            </div>
+
+        <!--Segunda pantalla-->
+            <div class="form-container" id="form-container">
+                <div class="form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="producto" placeholder="Ingresá el producto">
+                    </div>
+                    <select class="form-select mb-3" id="categoria" aria-label="Default select example">
+                        <option selected disabled>Elegí una categoría</option>
+                        <option value="1">Almacén</option>
+                        <option value="2">Limpieza</option>
+                        <option value="3">Bebidas</option>
+                        <option value="4">Carnicería</option>
+                        <option value="5">Lacteos</option>
+                        <option value="6">Electro</option>
+                        <option value="7">Panadería</option>
+                        <option value="8">Perfumería</option>
+                        <option value="9">Verdulería</option>
+                    </select>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="descripcion" rows="10" placeholder="Descripción"></textarea>
+                    </div>
+                    <div class="boton-submit" id="submit">
+                        <input class="btn btn-primary" type="submit" value="Agregalo a la lista">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lista" id="lista"></div>
+            
+        </section>
+
+
+        <script src="script.js"></script>
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

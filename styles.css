@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header{
+    height: 10vh;
+    background-color: #D32F2F;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+header p{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 2px;
+    color: #fafafa;
+}
+
+/*Primer pantalla*/
+.screen{
+    padding: 20px;
+    box-sizing: border-box;
+    height: 90vh;
+}
+
+.welcome{
+    height: 100%;
+}
+
+.main{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main h1{
+    font-weight: bold;
+    color: #212121;
+}
+
+.main p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #212121;
+}
+
+.add{
+    height: 15%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add svg{
+    fill: #FFC107;
+    width: 70px;
+    position: fixed;
+}
+
+/*Segunda pantalla*/
+
+.form-container{
+    height: 100%;
+    display: none;
+}
+
+.form{
+    max-width: 500px;
+    background-color: #D32F2F;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.boton-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-submit input{
+    background: #FFC107;
+    border-color: #FFC107;
+    color: #212121;
+}
+
