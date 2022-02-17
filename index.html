@@ -16,47 +16,71 @@
             <p>myList</p>
         </header>
 
-        <section class="screen" id="screen">
+        <section class="screen">
 
         <!--Primera pantalla-->
-            <div class="welcome" id="welcome">
+            <div class="section01" id="section01">
                 <div class="main">
                     <h1>No tenés nada en tu carrito</h1>
                     <p>:(</p>
                 </div>
-                <div class="add" id="add">
+                <div class="btn01" id="btn01">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 368C269.3 368 280 357.3 280 344V280H344C357.3 280 368 269.3 368 256C368 242.7 357.3 232 344 232H280V168C280 154.7 269.3 144 256 144C242.7 144 232 154.7 232 168V232H168C154.7 232 144 242.7 144 256C144 269.3 154.7 280 168 280H232V344C232 357.3 242.7 368 256 368z"/></svg>
                 </div>
             </div>
 
         <!--Segunda pantalla-->
-            <div class="form-container" id="form-container">
+            <div class="section02" id="section02">
                 <div class="form">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="producto" placeholder="Ingresá el producto">
+                        <input type="text" class="form-control" id="product" autocomplete="off" placeholder="Ingresá el producto">
                     </div>
-                    <select class="form-select mb-3" id="categoria" aria-label="Default select example">
+                    <select class="form-select mb-3" id="category">
                         <option selected disabled>Elegí una categoría</option>
-                        <option value="1">Almacén</option>
-                        <option value="2">Limpieza</option>
-                        <option value="3">Bebidas</option>
-                        <option value="4">Carnicería</option>
-                        <option value="5">Lacteos</option>
-                        <option value="6">Electro</option>
-                        <option value="7">Panadería</option>
-                        <option value="8">Perfumería</option>
-                        <option value="9">Verdulería</option>
+                        <option value="img/almacen.png">Almacén</option>
+                        <option value="img/limpieza.png">Limpieza</option>
+                        <option value="img/bebidas.png">Bebidas</option>
+                        <option value="img/carniceria.png">Carnicería</option>
+                        <option value="img/lacteos.png">Lacteos</option>
+                        <option value="img/electro.png">Electro</option>
+                        <option value="img/panaderia.png">Panadería</option>
+                        <option value="img/perfumeria.png">Perfumería</option>
+                        <option value="img/verduras.png">Verdulería</option>
                     </select>
+                    <p id="message"></p>
                     <div class="mb-3">
-                        <textarea class="form-control" id="descripcion" rows="10" placeholder="Descripción"></textarea>
+                        <textarea class="form-control" id="description" rows="10" placeholder="Descripción"></textarea>
                     </div>
-                    <div class="boton-submit" id="submit">
-                        <input class="btn btn-primary" type="submit" value="Agregalo a la lista">
+                    <div class="boton-submit">
+                        <input type="submit" class="btn btn-primary" id="btn02" value="Agregalo a la lista">
                     </div>
                 </div>
             </div>
 
-            <div class="lista" id="lista"></div>
+
+            <!--Tercera pantalla-->
+            <div class="section03" id="section03">
+                <div class="listContainer" id="listContainer">
+                    <!--div class="itemContainer">
+                        <img src="img/almacen.png" alt="">
+                        <p>Producto</p>
+                        <svg id="detail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
+                    </div-->
+                </div>
+                <div class="btn01" id="btn03">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM256 368C269.3 368 280 357.3 280 344V280H344C357.3 280 368 269.3 368 256C368 242.7 357.3 232 344 232H280V168C280 154.7 269.3 144 256 144C242.7 144 232 154.7 232 168V232H168C154.7 232 144 242.7 144 256C144 269.3 154.7 280 168 280H232V344C232 357.3 242.7 368 256 368z"/></svg>
+                </div>
+            </div>
+
+            <!--Cuarta pantalla-->
+            <div class="section04" id="section04">
+                <!--div class="card">
+                    <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                    <img src="img/almacen.png" alt="">
+                    <h3>Producto</h3>
+                    <p>DescripciónDescripciónDescripciónDescripciónDescripciónDescripciónDescripciónDescripciónDescripción.</p>
+                </div-->
+            </div>
             
         </section>
 
